@@ -16,8 +16,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyR-iy-0G3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Record"/>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OyR-iy-0G3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bAJ-iy-FJ5"/>
+                            <constraint firstItem="OyR-iy-0G3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khD-me-UCY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OyR-iy-0G3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="bAJ-iy-FJ5"/>
+                                <exclude reference="khD-me-UCY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="OyR-iy-0G3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="bAJ-iy-FJ5"/>
+                                <include reference="khD-me-UCY"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
