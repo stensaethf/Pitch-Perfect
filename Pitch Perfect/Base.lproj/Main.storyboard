@@ -24,39 +24,81 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="151" y="250" width="100" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qs-6G-fHy"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIF-xH-hU4">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-Nn-ghR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="stopbutton"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="123" y="434" width="154" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNb-cN-CnK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OyR-iy-0G3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bAJ-iy-FJ5"/>
+                            <constraint firstItem="dh8-Nn-ghR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAw-fK-APc"/>
+                            <constraint firstItem="dh8-Nn-ghR" firstAttribute="top" secondItem="OyR-iy-0G3" secondAttribute="bottom" constant="84" id="eJB-ip-33N"/>
                             <constraint firstItem="OyR-iy-0G3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khD-me-UCY"/>
+                            <constraint firstItem="aIF-xH-hU4" firstAttribute="top" secondItem="OyR-iy-0G3" secondAttribute="bottom" constant="8" id="u61-7C-wQr"/>
+                            <constraint firstItem="aIF-xH-hU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9g-9A-U6P"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="OyR-iy-0G3"/>
+                                <exclude reference="aIF-xH-hU4"/>
+                                <exclude reference="dh8-Nn-ghR"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="bAJ-iy-FJ5"/>
                                 <exclude reference="khD-me-UCY"/>
+                                <exclude reference="u61-7C-wQr"/>
+                                <exclude reference="v9g-9A-U6P"/>
+                                <exclude reference="bAw-fK-APc"/>
+                                <exclude reference="eJB-ip-33N"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="OyR-iy-0G3"/>
+                                <include reference="aIF-xH-hU4"/>
+                                <include reference="dh8-Nn-ghR"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="bAJ-iy-FJ5"/>
                                 <include reference="khD-me-UCY"/>
+                                <include reference="u61-7C-wQr"/>
+                                <include reference="v9g-9A-U6P"/>
+                                <include reference="bAw-fK-APc"/>
+                                <include reference="eJB-ip-33N"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="aIF-xH-hU4" id="xUc-dc-SOY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="439.5" y="361"/>
         </scene>
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="stopbutton" width="50" height="50"/>
     </resources>
 </document>
