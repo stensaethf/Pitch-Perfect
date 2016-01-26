@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OyR-iy-0G3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bAJ-iy-FJ5"/>
                             <constraint firstItem="dh8-Nn-ghR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAw-fK-APc"/>
@@ -67,10 +67,10 @@
                             <mask key="constraints">
                                 <exclude reference="bAJ-iy-FJ5"/>
                                 <exclude reference="khD-me-UCY"/>
-                                <exclude reference="u61-7C-wQr"/>
-                                <exclude reference="v9g-9A-U6P"/>
                                 <exclude reference="bAw-fK-APc"/>
                                 <exclude reference="eJB-ip-33N"/>
+                                <exclude reference="u61-7C-wQr"/>
+                                <exclude reference="v9g-9A-U6P"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -82,14 +82,14 @@
                             <mask key="constraints">
                                 <include reference="bAJ-iy-FJ5"/>
                                 <include reference="khD-me-UCY"/>
-                                <include reference="u61-7C-wQr"/>
-                                <include reference="v9g-9A-U6P"/>
                                 <include reference="bAw-fK-APc"/>
                                 <include reference="eJB-ip-33N"/>
+                                <include reference="u61-7C-wQr"/>
+                                <include reference="v9g-9A-U6P"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="bLc-QD-3cI"/>
+                    <navigationItem key="navigationItem" title="Record" id="bLc-QD-3cI"/>
                     <connections>
                         <outlet property="recordButton" destination="OyR-iy-0G3" id="Bm9-cb-Wp4"/>
                         <outlet property="recordingInProgress" destination="aIF-xH-hU4" id="xUc-dc-SOY"/>
@@ -109,9 +109,30 @@
                         <viewControllerLayoutGuide type="bottom" id="fcg-a4-epc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AAw-Gq-q1H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGp-4x-ryA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="124" width="46" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gGp-4x-ryA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gGp-4x-ryA"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQf-TZ-WI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
