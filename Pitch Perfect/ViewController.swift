@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var recordingInProgress: UILabel!
     
     override func viewDidLoad() {
@@ -21,9 +23,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        // hide the stop button
+        stopButton.hidden = true
+        recordButton.enabled = true
+    }
 
     @IBAction func recordAudio(sender: UIButton) {
         recordingInProgress.hidden = false
+        stopButton.hidden = false
+        recordButton.enabled = false
         //TODO: record the user's voice.
         print("in recordAudio")
     }
