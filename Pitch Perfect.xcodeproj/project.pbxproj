@@ -78,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		868169751C59D53400937947 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				868169731C59D4EE00937947 /* movie_quote.mp3 */,
+				86E573E61C559EC000364508 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		86E573CE1C559EBF00364508 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +114,9 @@
 				86E573DA1C559EBF00364508 /* AppDelegate.swift */,
 				86E573DC1C559EBF00364508 /* ViewController.swift */,
 				86E573DE1C559EBF00364508 /* Main.storyboard */,
-				868169731C59D4EE00937947 /* movie_quote.mp3 */,
 				86E573E11C559EBF00364508 /* Assets.xcassets */,
 				86E573E31C559EC000364508 /* LaunchScreen.storyboard */,
-				86E573E61C559EC000364508 /* Info.plist */,
+				868169751C59D53400937947 /* Supporting Files */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";

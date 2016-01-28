@@ -107,35 +107,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd7-GI-goy">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button2"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="271" y="124" width="55" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="playAudioFast:" destination="zRA-6J-T1L" eventType="touchUpInside" id="d08-lc-kNd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGp-4x-ryA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" image="slow"/>
                                 <connections>
                                     <action selector="playAudioSlow:" destination="zRA-6J-T1L" eventType="touchUpInside" id="6Dd-lY-UlU"/>
+                                    <action selector="playSlowAudio:" destination="zRA-6J-T1L" eventType="touchUpInside" id="dct-Ud-fpn"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gGp-4x-ryA" firstAttribute="leading" secondItem="AAw-Gq-q1H" secondAttribute="leadingMargin" constant="50" id="Kcg-qV-p45"/>
+                            <constraint firstItem="gGp-4x-ryA" firstAttribute="leading" secondItem="AAw-Gq-q1H" secondAttribute="leadingMargin" constant="30" id="Kcg-qV-p45"/>
                             <constraint firstItem="gGp-4x-ryA" firstAttribute="top" secondItem="iSP-0G-pDV" secondAttribute="bottom" constant="50" id="XNs-6q-KdP"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Fd7-GI-goy"/>
                                 <exclude reference="gGp-4x-ryA"/>
                             </mask>
                             <mask key="constraints">
@@ -145,7 +134,6 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Fd7-GI-goy"/>
                                 <include reference="gGp-4x-ryA"/>
                             </mask>
                             <mask key="constraints">
