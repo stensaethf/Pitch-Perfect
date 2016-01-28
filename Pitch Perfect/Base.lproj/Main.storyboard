@@ -46,9 +46,9 @@
                         <animations/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dh8-Nn-ghR" secondAttribute="bottom" constant="115" id="TJv-GC-1Ju"/>
                             <constraint firstItem="OyR-iy-0G3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bAJ-iy-FJ5"/>
                             <constraint firstItem="dh8-Nn-ghR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAw-fK-APc"/>
-                            <constraint firstItem="dh8-Nn-ghR" firstAttribute="top" secondItem="OyR-iy-0G3" secondAttribute="bottom" constant="84" id="eJB-ip-33N"/>
                             <constraint firstItem="OyR-iy-0G3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khD-me-UCY"/>
                             <constraint firstItem="aIF-xH-hU4" firstAttribute="top" secondItem="OyR-iy-0G3" secondAttribute="bottom" constant="8" id="u61-7C-wQr"/>
                             <constraint firstItem="aIF-xH-hU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9g-9A-U6P"/>
@@ -62,10 +62,10 @@
                             <mask key="constraints">
                                 <exclude reference="bAJ-iy-FJ5"/>
                                 <exclude reference="khD-me-UCY"/>
-                                <exclude reference="bAw-fK-APc"/>
-                                <exclude reference="eJB-ip-33N"/>
                                 <exclude reference="u61-7C-wQr"/>
                                 <exclude reference="v9g-9A-U6P"/>
+                                <exclude reference="bAw-fK-APc"/>
+                                <exclude reference="TJv-GC-1Ju"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -77,10 +77,10 @@
                             <mask key="constraints">
                                 <include reference="bAJ-iy-FJ5"/>
                                 <include reference="khD-me-UCY"/>
-                                <include reference="bAw-fK-APc"/>
-                                <include reference="eJB-ip-33N"/>
                                 <include reference="u61-7C-wQr"/>
                                 <include reference="v9g-9A-U6P"/>
+                                <include reference="bAw-fK-APc"/>
+                                <include reference="TJv-GC-1Ju"/>
                             </mask>
                         </variation>
                     </view>
@@ -135,9 +135,9 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HoL-ua-cGH" firstAttribute="top" secondItem="gGp-4x-ryA" secondAttribute="bottom" constant="224" id="8od-LD-GgY"/>
                             <constraint firstItem="gGp-4x-ryA" firstAttribute="leading" secondItem="AAw-Gq-q1H" secondAttribute="leadingMargin" constant="30" id="Kcg-qV-p45"/>
                             <constraint firstItem="gGp-4x-ryA" firstAttribute="top" secondItem="iSP-0G-pDV" secondAttribute="bottom" constant="50" id="XNs-6q-KdP"/>
+                            <constraint firstItem="fcg-a4-epc" firstAttribute="top" secondItem="HoL-ua-cGH" secondAttribute="bottom" constant="115" id="ZTv-c6-9ME"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kyn-nx-SKs" secondAttribute="trailing" constant="30" id="j7B-P1-4R7"/>
                             <constraint firstItem="kyn-nx-SKs" firstAttribute="top" secondItem="iSP-0G-pDV" secondAttribute="bottom" constant="50" id="r9R-rr-Ud1"/>
                             <constraint firstItem="HoL-ua-cGH" firstAttribute="centerX" secondItem="AAw-Gq-q1H" secondAttribute="centerX" id="zQL-TD-0en"/>
@@ -153,8 +153,8 @@
                                 <exclude reference="XNs-6q-KdP"/>
                                 <exclude reference="j7B-P1-4R7"/>
                                 <exclude reference="r9R-rr-Ud1"/>
-                                <exclude reference="8od-LD-GgY"/>
                                 <exclude reference="zQL-TD-0en"/>
+                                <exclude reference="ZTv-c6-9ME"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -168,8 +168,8 @@
                                 <include reference="XNs-6q-KdP"/>
                                 <include reference="j7B-P1-4R7"/>
                                 <include reference="r9R-rr-Ud1"/>
-                                <include reference="8od-LD-GgY"/>
                                 <include reference="zQL-TD-0en"/>
+                                <include reference="ZTv-c6-9ME"/>
                             </mask>
                         </variation>
                     </view>
