@@ -112,7 +112,6 @@
                                 <animations/>
                                 <state key="normal" image="slow"/>
                                 <connections>
-                                    <action selector="playAudioSlow:" destination="zRA-6J-T1L" eventType="touchUpInside" id="6Dd-lY-UlU"/>
                                     <action selector="playSlowAudio:" destination="zRA-6J-T1L" eventType="touchUpInside" id="dct-Ud-fpn"/>
                                 </connections>
                             </button>
