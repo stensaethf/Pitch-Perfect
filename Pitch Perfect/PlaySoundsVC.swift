@@ -21,6 +21,16 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func playAudioSlow(sender: UIButton) {
+        print("entered slow")
+        // code.
+    }
+    
+    @IBAction func playAudioFast(sender: UIButton) {
+        print("entered fast")
+        // code.
+    }
+    
 
     /*
     // MARK: - Navigation

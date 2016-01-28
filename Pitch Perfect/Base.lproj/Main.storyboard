@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="1357.5" y="361"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="XFz-TY-pAd">
             <objects>
-                <viewController id="zRA-6J-T1L" sceneMemberID="viewController">
+                <viewController id="zRA-6J-T1L" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iSP-0G-pDV"/>
                         <viewControllerLayoutGuide type="bottom" id="fcg-a4-epc"/>
@@ -119,11 +119,17 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="58" y="124" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="playAudioSlow:" destination="zRA-6J-T1L" eventType="touchUpInside" id="6Dd-lY-UlU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOf-Ua-AWZ">
                                 <rect key="frame" x="433" y="146" width="55" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button2"/>
+                                <connections>
+                                    <action selector="playAudioFast:" destination="zRA-6J-T1L" eventType="touchUpInside" id="Tm2-RH-egV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
