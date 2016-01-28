@@ -21,9 +21,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" image="Microphone"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="151" y="250" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qs-6G-fHy"/>
                                 </connections>
@@ -39,9 +36,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" image="stopbutton"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="123" y="434" width="154" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNb-cN-CnK"/>
                                     <segue destination="zRA-6J-T1L" kind="show" id="WEE-lH-LH8"/>
@@ -115,7 +109,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGp-4x-ryA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="58" y="124" width="46" height="30"/>
                                 </variation>
@@ -123,12 +117,15 @@
                                     <action selector="playAudioSlow:" destination="zRA-6J-T1L" eventType="touchUpInside" id="6Dd-lY-UlU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOf-Ua-AWZ">
-                                <rect key="frame" x="433" y="146" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd7-GI-goy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button2"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="271" y="124" width="55" height="30"/>
+                                </variation>
                                 <connections>
-                                    <action selector="playAudioFast:" destination="zRA-6J-T1L" eventType="touchUpInside" id="Tm2-RH-egV"/>
+                                    <action selector="playAudioFast:" destination="zRA-6J-T1L" eventType="touchUpInside" id="d08-lc-kNd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,11 +134,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="gGp-4x-ryA"/>
+                                <exclude reference="Fd7-GI-goy"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="gGp-4x-ryA"/>
+                                <include reference="Fd7-GI-goy"/>
                             </mask>
                         </variation>
                     </view>
