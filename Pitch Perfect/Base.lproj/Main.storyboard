@@ -120,6 +120,11 @@
                                     <rect key="frame" x="58" y="124" width="46" height="30"/>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOf-Ua-AWZ">
+                                <rect key="frame" x="433" y="146" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button2"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
