@@ -115,29 +115,61 @@
                                     <action selector="playSlowAudio:" destination="zRA-6J-T1L" eventType="touchUpInside" id="dct-Ud-fpn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyn-nx-SKs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="fast"/>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="zRA-6J-T1L" eventType="touchUpInside" id="Ywy-dI-ppl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoL-ua-cGH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="stopbutton"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="zRA-6J-T1L" eventType="touchUpInside" id="rR0-8G-Jqg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HoL-ua-cGH" firstAttribute="top" secondItem="gGp-4x-ryA" secondAttribute="bottom" constant="224" id="8od-LD-GgY"/>
                             <constraint firstItem="gGp-4x-ryA" firstAttribute="leading" secondItem="AAw-Gq-q1H" secondAttribute="leadingMargin" constant="30" id="Kcg-qV-p45"/>
                             <constraint firstItem="gGp-4x-ryA" firstAttribute="top" secondItem="iSP-0G-pDV" secondAttribute="bottom" constant="50" id="XNs-6q-KdP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kyn-nx-SKs" secondAttribute="trailing" constant="30" id="j7B-P1-4R7"/>
+                            <constraint firstItem="kyn-nx-SKs" firstAttribute="top" secondItem="iSP-0G-pDV" secondAttribute="bottom" constant="50" id="r9R-rr-Ud1"/>
+                            <constraint firstItem="HoL-ua-cGH" firstAttribute="centerX" secondItem="AAw-Gq-q1H" secondAttribute="centerX" id="zQL-TD-0en"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="gGp-4x-ryA"/>
+                                <exclude reference="kyn-nx-SKs"/>
+                                <exclude reference="HoL-ua-cGH"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Kcg-qV-p45"/>
                                 <exclude reference="XNs-6q-KdP"/>
+                                <exclude reference="j7B-P1-4R7"/>
+                                <exclude reference="r9R-rr-Ud1"/>
+                                <exclude reference="8od-LD-GgY"/>
+                                <exclude reference="zQL-TD-0en"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="gGp-4x-ryA"/>
+                                <include reference="kyn-nx-SKs"/>
+                                <include reference="HoL-ua-cGH"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Kcg-qV-p45"/>
                                 <include reference="XNs-6q-KdP"/>
+                                <include reference="j7B-P1-4R7"/>
+                                <include reference="r9R-rr-Ud1"/>
+                                <include reference="8od-LD-GgY"/>
+                                <include reference="zQL-TD-0en"/>
                             </mask>
                         </variation>
                     </view>
@@ -168,6 +200,7 @@
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="fast" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
         <image name="stopbutton" width="50" height="50"/>
     </resources>
