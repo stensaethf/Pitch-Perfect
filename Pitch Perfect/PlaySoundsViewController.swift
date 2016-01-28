@@ -35,6 +35,7 @@ class PlaySoundsViewController: UIViewController {
         // play audio slow
         audioPlayer.stop()
         audioPlayer.rate = 0.5
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
     
@@ -42,6 +43,7 @@ class PlaySoundsViewController: UIViewController {
         // play audio fast
         audioPlayer.stop()
         audioPlayer.rate = 1.5
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
     
