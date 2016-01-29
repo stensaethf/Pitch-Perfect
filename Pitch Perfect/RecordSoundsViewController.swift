@@ -17,6 +17,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     //Declared Globally
     var audioRecorder:AVAudioRecorder!
+    var recordedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,9 +62,18 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
-        // step 1: save the recorded audio
-        
-        // step 2: move to next scene - perform segue
+        if (flag) {
+            // step 1: save the recorded audio
+            recordedAudio = RecordedAudio()
+            recordedAudio.filePathUrl = recorder.url
+            recordedAudio.title = recorder.url.lastPathComponent
+            // step 2: move to next scene - perform segue
+            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+        } else {
+            print("recording was not successful")
+            recordButton.enabled = true
+            stopButton.hidden = true
+        }
     }
 
     @IBAction func stopAudio(sender: UIButton) {
